@@ -1,6 +1,6 @@
-\documentclass[PMO,authoryear,toc]{lsstdoc}
+\documentclass[PMO,authoryear,lsstdraft,toc]{lsstdoc}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
-\input{meta}
+% \input{meta}
 
 % Package imports go here.
 
@@ -22,7 +22,7 @@ Cristian Silva
 \setDocRef{ITTN-061}
 \setDocUpstreamLocation{\url{https://github.com/lsst-it/ittn-061}}
 
-\date{\vcsDate}
+\date {\today}
 
 % Optional: name of the document's curator
 % \setDocCurator{The Curator of this Document}
@@ -49,6 +49,9 @@ Description of the deployment of the summit computing cluster.
 
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
+\input{intro.tex}
+\input{status.tex}
+
 
 \appendix
 % Include all the relevant bib files.
