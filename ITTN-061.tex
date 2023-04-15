@@ -3,8 +3,10 @@
 % \input{meta}
 
 % Package imports go here.
+\usepackage{xspace}
 
 % Local commands go here.
+\newcommand{\CC}{Commissioning Cluster\xspace}
 
 %If you want glossaries
 %\input{aglossary.tex}
@@ -16,7 +18,9 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Cristian Silva
+  Cristi\'an Silva
+and
+  Robert Lupton
 }
 
 \setDocRef{ITTN-061}
@@ -51,7 +55,8 @@ Description of the deployment of the summit computing cluster.
 % You can also use the \input command to include several content files.
 \input{intro.tex}
 \input{status.tex}
-
+\input{software.tex}
+\input{openIssues.tex}
 
 \appendix
 % Include all the relevant bib files.
@@ -65,9 +70,5 @@ Description of the deployment of the summit computing cluster.
 \input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
-
-
-
-
 
 \end{document}
