@@ -53,3 +53,31 @@ Regardless of the several components running in yagan, its cpu usage stays below
 Each rack at the summit has a maximum of 48RU, 8RU are used by network equipment such as switches and fiber headers. Therefore each rack could potentially host 40 servers of 1RU each.
 
 The kubernetes clusters at the summit are all of 1RU with 64 cores; hence each rack could deliver up to 2500 cores. However, given the current commissioning and summit cluster size, the maximum size of the new computing cluster would be 1400 cores. 
+
+\section{Storage}
+
+Storage plays a crucial role in commissioning a cluster. The storage system should be fast and reliable to ensure that data can be accessed quickly and without interruption.
+
+Rubin DevOps team prefer to have a single storage endpoint at the summit, which can simplify management and maintenance of the storage system. This can also help ensure consistency across the cluster and make it easier to manage access control and permissions for different users and applications. However, it's important to ensure that the chosen storage solution can meet the performance and capacity requirements of the cluster as well as any security and compliance requirements. 
+
+The storage endpoint of the summit will be the LFA, hence additionally will host all the LSSTCam data, the data products, and all the systems needing disk space , so all of these components should be factored in when determining the total storage capacity required for the cluster.
+
+The following is an estimation of storage sizing:
+
+LSSTCam:
+
+15MB/CCD * 200 CCD/exposure * 2 exposure/visit * 1000 visit/day (including calibs) * 30 days = ~180TB
+
+LFA:
+
+200 GB/day * 30 days = ~6TB
+
+Data products:
+
+
+
+EFD:
+
+
+
+Overheads:
